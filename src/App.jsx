@@ -1,23 +1,21 @@
-import { useState } from "react";
+import { useRoutes } from "react-router-dom";
 import "./App.css";
-
+import Sidebar from "./components/sidebar/sidebar";
+import Header from "./components/topBar/topBar";
+import routes from "./routers";
 function App() {
-  const [count, setCount] = useState(0);
-
+  let router = useRoutes(routes);
   return (
     <>
-      <h1>Vite + React hii i am marziii</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <div className="row overflow-hidden w-100 p-0 m-0">
+        <div className="col-md-2 d-md-block d-none">
+          <Sidebar />
+        </div>
+        <div className="col-md-10 col-12 bg-warning">
+          <Header />
+          {router}
+        </div>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   );
 }
