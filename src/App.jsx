@@ -1,7 +1,7 @@
 import { useRoutes } from "react-router-dom";
 import "./App.css";
 import Sidebar from "./components/sidebar/sidebar";
-import Header from "./components/topBar/topBar";
+import Topbar from "./components/topbar/topbar";
 import routes from "./routers";
 function App() {
   let router = useRoutes(routes);
@@ -11,8 +11,8 @@ function App() {
         <div className="col-md-2 d-md-block d-none">
           <Sidebar />
         </div>
-        <div className="col-md-10 col-12 bg-warning">
-          <Header />
+        <div className="col-md-10 col-12">
+          <Topbar />
           {router}
         </div>
       </div>
