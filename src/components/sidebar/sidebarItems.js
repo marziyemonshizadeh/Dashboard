@@ -9,25 +9,25 @@ import { PiBagBold } from "react-icons/pi";
 import { RiFeedbackFill } from "react-icons/ri";
 
 let dashboard = [
-  { text: "خانه", icon: AiFillHome },
-  { text: "تجزیه و تحلیل", icon: IoAnalyticsSharp },
-  { text: "فروش", icon: AiOutlineRise },
+  { text: "خانه", to: "/", icon: AiFillHome },
+  { text: "تجزیه و تحلیل", to: "/", icon: IoAnalyticsSharp },
+  { text: "فروش", to: "/", icon: AiOutlineRise },
 ];
 let quickMenu = [
-  { text: "کاربران", icon: FaRegUser },
-  { text: "کاربر جدید", icon: FaRegUser },
-  { text: "محصولات", icon: BiStoreAlt },
-  { text: "معاملات", icon: MdOutlineAttachMoney },
-  { text: "گزارش ها", icon: BsFillBarChartFill },
+  { text: "کاربران", to: "/users", icon: FaRegUser },
+  { text: "کاربر جدید", to: "/newuser", icon: FaRegUser },
+  { text: "محصولات", to: "/products", icon: BiStoreAlt },
+  { text: "معاملات", to: "/", icon: MdOutlineAttachMoney },
+  { text: "گزارش ها", to: "/", icon: BsFillBarChartFill },
 ];
 let notification = [
-  { text: "ایمیل ها", icon: AiOutlineMail },
-  { text: "بازخورد", icon: RiFeedbackFill },
-  { text: "پیام ها", icon: LuMessageSquare },
+  { text: "ایمیل ها", to: "/", icon: AiOutlineMail },
+  { text: "بازخورد", to: "/", icon: RiFeedbackFill },
+  { text: "پیام ها", to: "/", icon: LuMessageSquare },
 ];
 let staff = [
-  { text: "مدیریت ", icon: PiBagBold },
-  { text: "تجزیه و تحلیل", icon: IoAnalyticsSharp },
-  { text: "گزارش ها", icon: MdReport },
+  { text: "مدیریت ", to: "/", icon: PiBagBold },
+  { text: "تجزیه و تحلیل", to: "/", icon: IoAnalyticsSharp },
+  { text: "گزارش ها", to: "/", icon: MdReport },
 ];
 export default [dashboard, quickMenu, notification, staff];
