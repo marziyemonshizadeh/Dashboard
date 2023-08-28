@@ -1,10 +1,13 @@
 import React from "react";
 import { FaArrowDown, FaArrowUp } from "react-icons/fa";
+import Chart from "../../components/chart/chart";
 import Features from "../../components/features/features";
+import WidgetSm from "../../components/widgetSm/widgetSm";
+import { xAxisData } from "../../datas";
 
 export default function home() {
   return (
-    <div>
+    <div className="mx-2">
       <div class="container text-center">
         <div class="row gap-md-0 gap-2">
           <div class="col-12 col-md-4">
@@ -24,6 +27,8 @@ export default function home() {
           </div>
         </div>
       </div>
+      <Chart grid title="فروش ماهانه" data={xAxisData} dataKey="Sale" />
+      <WidgetSm />
     </div>
   );
 }
