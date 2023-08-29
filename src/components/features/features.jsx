@@ -10,7 +10,7 @@ export default function features({ title, price, action, children }) {
             {children}
             {action}
           </span>
-          <h3>{price} $</h3>
+          <h3 className="fs-5">{price} $</h3>
         </div>
         <span class="card-subtitle mb-2 text-body-secondary">
           در مقایسه با ماه گذشته
