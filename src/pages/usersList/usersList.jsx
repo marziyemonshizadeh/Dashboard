@@ -1,7 +1,6 @@
 import DeleteIcon from "@mui/icons-material/Delete";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
-import { pink } from "@mui/material/colors";
 import { DataGrid } from "@mui/x-data-grid";
 import React, { useState } from "react";
 
@@ -57,19 +56,20 @@ export default function users() {
       width: 150,
       renderCell: (params) => {
         return (
-          <div className=" d-flex align-items-center  gap-3">
+          <div className="d-flex align-items-center  gap-3">
             <Link
               to="#"
               // to={`/user/${params.row.id}`}
               className="text-decoration-none"
             >
-              <Button variant="contained" color="success">
+              <Button color="secondary">Edit</Button>
+              {/* <Button variant="contained" color="success">
                 Edit
-              </Button>
+              </Button> */}
             </Link>
             <DeleteIcon
               className="text-decoration-none"
-              sx={{ color: pink[500] }}
+              color="secondary"
               onClick={() => userDelete(params.row.id)}
             />
           </div>
@@ -78,13 +78,15 @@ export default function users() {
     },
   ];
   return (
-    <Box sx={{ height: 400, width: "100%" }}>
-      <DataGrid
-        rows={userDatas}
-        columns={columns}
-        disableSelectionOnClick
-        pageSize={4}
-      />
-    </Box>
+    <div className="card">
+      <Box sx={{ height: 400, width: "100%" }}>
+        <DataGrid
+          rows={userDatas}
+          columns={columns}
+          disableSelectionOnClick
+          pageSize={4}
+        />
+      </Box>
+    </div>
   );
 }

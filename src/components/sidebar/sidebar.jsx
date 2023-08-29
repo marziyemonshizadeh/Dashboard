@@ -8,13 +8,19 @@ export default function sidebar() {
       className="container w-auto py-3"
       style={{ position: "fixed", height: "100%" }}
     >
-      <p className="my-2 text-muted fw-bold d-none d-md-inline">داشبورد</p>
+      <p
+        className="my-2 fw-bold  d-none d-md-inline"
+        style={{ color: "#9C27B0" }}
+      >
+        داشبورد
+      </p>
       <ul className="list-group list-group-flush">
         {SidebarItems[0].map((i, index) => {
           return (
             <Link
               to={i.to}
-              className="text-decoration-none text-muted my-2"
+              className="text-decoration-none my-2"
+              style={{ color: "rgb(230, 231, 228)" }}
               key={index}
             >
               <i.icon className="ms-3 icon" />
@@ -23,13 +29,18 @@ export default function sidebar() {
           );
         })}
       </ul>
-      <p className="my-2 text-muted fw-bold d-none d-md-inline">منوی سریع</p>
+      <p
+        className="my-2 text-muted fw-bold d-none d-md-inline"
+        style={{ color: "#9C27B0" }}
+      >
+        منوی سریع
+      </p>
       <ul className="list-group list-group-flush">
         {SidebarItems[1].map((i, index) => {
           return (
             <Link
               to={i.to}
-              className="text-decoration-none text-muted my-2"
+              className="text-decoration-none text-light my-2"
               key={index}
             >
               <i.icon className="ms-3 icon" />
@@ -38,13 +49,18 @@ export default function sidebar() {
           );
         })}
       </ul>
-      <p className="my-2 text-muted fw-bold d-none d-md-inline">اطلاعیه</p>
+      <p
+        className="my-2 fw-bold d-none d-md-inline"
+        style={{ color: "#9C27B0" }}
+      >
+        اطلاعیه
+      </p>
       <ul className="list-group list-group-flush">
         {SidebarItems[2].map((i, index) => {
           return (
             <Link
               to={i.to}
-              className="text-decoration-none text-muted my-2"
+              className="text-decoration-none text-light my-2"
               key={index}
             >
               <i.icon className="ms-3 icon" />
@@ -53,13 +69,18 @@ export default function sidebar() {
           );
         })}
       </ul>
-      <p className="my-2 text-muted fw-bold d-none d-md-inline">کارکنان</p>
+      <p
+        className="my-2 fw-bold d-none d-md-inline"
+        style={{ color: "#9C27B0" }}
+      >
+        کارکنان
+      </p>
       <ul className="list-group list-group-flush">
         {SidebarItems[3].map((i, index) => {
           return (
             <Link
               to={i.to}
-              className="text-decoration-none text-muted my-2"
+              className="text-decoration-none text-light my-2"
               key={index}
             >
               <i.icon className="ms-3 icon" />
