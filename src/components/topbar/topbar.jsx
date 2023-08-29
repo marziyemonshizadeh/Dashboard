@@ -1,28 +1,26 @@
+import LanguageIcon from "@mui/icons-material/Language";
+import NotificationsIcon from "@mui/icons-material/Notifications";
+import SettingsIcon from "@mui/icons-material/Settings";
+import Badge from "@mui/material/Badge";
 import React from "react";
-import { AiFillSetting } from "react-icons/ai";
-import { IoNotifications } from "react-icons/io5";
-import { MdOutlineLanguage } from "react-icons/md";
-import { Link } from "react-router-dom";
+import RoundedImg from "../roundedImg/roundedImg";
 import "./topbar.css";
 export default function header() {
   return (
     <div className="d-flex justify-content-end">
-      <Link to="#" className="nav-link nav-icon iconClass">
-        <IoNotifications className="m-1 my-3 iconTopbarStyle icon" />
-        <span className="badge badge-dark bg-danger rounded-circle">2</span>
-      </Link>
-      <Link to="#" className="nav-link nav-icon iconClass">
-        <MdOutlineLanguage className="m-1 my-3 iconTopbarStyle icon" />
-        <span className="badge badge-dark bg-danger rounded-circle">8</span>
-      </Link>
-      <Link to="/">
-        <AiFillSetting className="m-1 my-3 iconTopbarStyle icon" />
-      </Link>
-      <img
+      <div className="mt-3 d-flex gap-1">
+        <Badge color="secondary" badgeContent={7} showZero>
+          <NotificationsIcon color="action" />
+        </Badge>
+        <Badge color="secondary" badgeContent={3} showZero>
+          <LanguageIcon color="action" />
+        </Badge>
+        <SettingsIcon color="action" />
+      </div>
+      <RoundedImg
         src="https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/short/linkedin-profile-picture-maker/dummy_image/thumb/004.webp"
-        alt="profile"
-        className="rounded-circle my-2"
-        style={{ width: "45px", height: "45px" }}
+        alt="topbar"
+        className="m-1"
       />
     </div>
   );
