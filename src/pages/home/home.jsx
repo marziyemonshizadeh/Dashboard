@@ -1,7 +1,7 @@
 import ArrowDownwardRoundedIcon from "@mui/icons-material/ArrowDownwardRounded";
 import ArrowUpwardRoundedIcon from "@mui/icons-material/ArrowUpwardRounded";
 import React from "react";
-import Chart from "../../components/chart/chart";
+import LineChart from "../../components/chart/lineChart";
 import Features from "../../components/features/features";
 import WidgetLg from "../../components/widgetLg/widgetLg";
 import WidgetSm from "../../components/widgetSm/widgetSm";
@@ -31,13 +31,13 @@ export default function home() {
         </div>
       </div>
       {/* chart */}
-      <Chart grid title="فروش ماهانه" data={xAxisData} dataKey="Sale" />
+      <LineChart grid title="فروش ماهانه" data={xAxisData} dataKey1="Sale" />
       {/* widgets */}
-      <div class="row gap-md-0 gap-2">
+      <div class="row gap-md-0 gap-2 ">
         <div class="col col-md-8">
           <WidgetLg />
         </div>
-        <div class="col col-md-4">
+        <div class="col col-md-4  ">
           <WidgetSm />
         </div>
       </div>

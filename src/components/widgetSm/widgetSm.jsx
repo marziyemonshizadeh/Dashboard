@@ -1,10 +1,10 @@
+import VisibilityRoundedIcon from "@mui/icons-material/VisibilityRounded";
 import React from "react";
-import { MdVisibility } from "react-icons/md";
 import { newMembers } from "../../datas";
 import RoundedImg from "../roundedImg/roundedImg";
 export default function WidgetSm() {
   return (
-    <div className="card p-3 my-2">
+    <div className="card p-3 my-2" style={{ minHeight: "330px" }}>
       <p>اعضای جدید</p>
       {newMembers.map((i) => (
         <div
@@ -16,7 +16,7 @@ export default function WidgetSm() {
             <p className="fs-5">{i.username}</p>
             <p className="text-muted">{i.title}</p>
           </div>
-          <MdVisibility />
+          <VisibilityRoundedIcon />
         </div>
       ))}
     </div>
