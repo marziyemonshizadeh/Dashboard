@@ -30,7 +30,7 @@ export default function sidebar() {
         })}
       </ul>
       <p
-        className="my-2 text-muted fw-bold d-none d-md-inline"
+        className="my-2 fw-bold  d-none d-md-inline"
         style={{ color: "#9C27B0" }}
       >
         منوی سریع
