@@ -1,33 +1,38 @@
-import { AiFillHome, AiOutlineMail, AiOutlineRise } from "react-icons/ai";
-import { BiStoreAlt } from "react-icons/bi";
-import { BsFillBarChartFill } from "react-icons/bs";
-import { FaRegUser } from "react-icons/fa";
-import { IoAnalyticsSharp } from "react-icons/io5";
-import { LuMessageSquare } from "react-icons/lu";
-import { MdOutlineAttachMoney, MdReport } from "react-icons/md";
-import { PiBagBold } from "react-icons/pi";
-import { RiFeedbackFill } from "react-icons/ri";
+// icons-material
+import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
+import BarChartIcon from "@mui/icons-material/BarChart";
+import BusinessCenterRoundedIcon from "@mui/icons-material/BusinessCenterRounded";
+import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
+import DynamicFeedIcon from "@mui/icons-material/DynamicFeed";
+import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
+import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import PersonIcon from "@mui/icons-material/Person";
+import PersonAddIcon from "@mui/icons-material/PersonAdd";
+import ReportRoundedIcon from "@mui/icons-material/ReportRounded";
+import StoreIcon from "@mui/icons-material/Store";
+import TimelineRoundedIcon from "@mui/icons-material/TimelineRounded";
+import TrendingUpIcon from "@mui/icons-material/TrendingUp";
 
 let dashboard = [
-  { text: "خانه", to: "/", icon: AiFillHome },
-  { text: "تجزیه و تحلیل", to: "/", icon: IoAnalyticsSharp },
-  { text: "فروش", to: "/", icon: AiOutlineRise },
+  { text: "خانه", to: "/", icon: HomeRoundedIcon },
+  { text: "تجزیه و تحلیل", to: "/analytics", icon: TimelineRoundedIcon },
+  { text: "فروش", to: "/", icon: TrendingUpIcon },
 ];
 let quickMenu = [
-  { text: "کاربران", to: "/users", icon: FaRegUser },
-  { text: "کاربر جدید", to: "/newuser", icon: FaRegUser },
-  { text: "محصولات", to: "/products", icon: BiStoreAlt },
-  { text: "معاملات", to: "/", icon: MdOutlineAttachMoney },
-  { text: "گزارش ها", to: "/", icon: BsFillBarChartFill },
+  { text: "کاربران", to: "/users", icon: PersonIcon },
+  { text: "کاربر جدید", to: "/", icon: PersonAddIcon },
+  { text: "محصولات", to: "/products", icon: StoreIcon },
+  { text: "معاملات", to: "/", icon: AttachMoneyIcon },
+  { text: "گزارش ها", to: "/", icon: BarChartIcon },
 ];
 let notification = [
-  { text: "ایمیل ها", to: "/", icon: AiOutlineMail },
-  { text: "بازخورد", to: "/", icon: RiFeedbackFill },
-  { text: "پیام ها", to: "/", icon: LuMessageSquare },
+  { text: "ایمیل ها", to: "/", icon: MailOutlineIcon },
+  { text: "بازخورد", to: "/", icon: DynamicFeedIcon },
+  { text: "پیام ها", to: "/", icon: ChatBubbleOutlineIcon },
 ];
 let staff = [
-  { text: "مدیریت ", to: "/", icon: PiBagBold },
-  { text: "تجزیه و تحلیل", to: "/", icon: IoAnalyticsSharp },
-  { text: "گزارش ها", to: "/", icon: MdReport },
+  { text: "مدیریت ", to: "/", icon: BusinessCenterRoundedIcon },
+  { text: "تجزیه و تحلیل", to: "/", icon: TimelineRoundedIcon },
+  { text: "گزارش ها", to: "/", icon: ReportRoundedIcon },
 ];
 export default [dashboard, quickMenu, notification, staff];
