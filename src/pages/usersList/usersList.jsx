@@ -63,9 +63,6 @@ export default function users() {
               className="text-decoration-none"
             >
               <Button color="secondary">Edit</Button>
-              {/* <Button variant="contained" color="success">
-                Edit
-              </Button> */}
             </Link>
             <DeleteIcon
               className="text-decoration-none"
@@ -78,13 +75,21 @@ export default function users() {
     },
   ];
   return (
-    <div className="card">
-      <Box sx={{ height: 400, width: "100%" }}>
+    <div dir="ltr" className="my-3" style={{ height: "100vh" }}>
+      <Box sx={{ height: 400, width: "100%" }} className="card">
         <DataGrid
           rows={userDatas}
           columns={columns}
+          initialState={{
+            pagination: {
+              paginationModel: {
+                pageSize: 5,
+              },
+            },
+          }}
+          pageSizeOptions={[5]}
           disableSelectionOnClick
-          pageSize={4}
+          // pageSize={4}
         />
       </Box>
     </div>
