@@ -16,7 +16,7 @@ import TrendingUpIcon from "@mui/icons-material/TrendingUp";
 let dashboard = [
   { text: "خانه", to: "/", icon: HomeRoundedIcon },
   { text: "تجزیه و تحلیل", to: "/analytics", icon: TimelineRoundedIcon },
-  { text: "فروش", to: "/", icon: TrendingUpIcon },
+  { text: "فروش", to: "/sale", icon: TrendingUpIcon },
 ];
 let quickMenu = [
   { text: "کاربران", to: "/users", icon: PersonIcon },

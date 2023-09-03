@@ -241,11 +241,11 @@ const productsData = [
   },
 ];
 const AnnualSalesOfEachProduct = [
-  { title: "msi", count: 48, fill: "#A4DE6C" },
-  { title: "Macbook Pro", count: 81, fill: "#82CA9D" },
-  { title: "iPhone14 Pro Max", count: 139, fill: "#8884D8" },
-  { title: "Dell", count: 20, fill: "#FFC658" },
-  { title: "Asus", count: 96, fill: "#8DD1E1" },
+  { name: "msi", count: 48, fill: "#A4DE6C" },
+  { name: "Macbook Pro", count: 81, fill: "#82CA9D" },
+  { name: "iPhone14 Pro Max", count: 139, fill: "#8884D8" },
+  { name: "Dell", count: 20, fill: "#FFC658" },
+  { name: "Asus", count: 96, fill: "#8DD1E1" },
 ];
 export {
   AnnualSalesOfEachProduct,
