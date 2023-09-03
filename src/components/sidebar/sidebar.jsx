@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import SidebarItems from "./sidebarItems.js";
 
 export default function sidebar() {
@@ -10,22 +10,26 @@ export default function sidebar() {
     >
       <p
         className="my-2 fw-bold  d-none d-md-inline"
-        style={{ color: "#9C27B0" }}
+        // style={{ color: "#C836FC" }}
       >
         داشبورد
       </p>
       <ul className="list-group list-group-flush">
         {SidebarItems[0].map((i, index) => {
           return (
-            <Link
+            <NavLink
               to={i.to}
               className="text-decoration-none my-2"
-              style={{ color: "rgb(230, 231, 228)" }}
+              style={({ isActive }) => {
+                return {
+                  color: isActive ? "#C836FC" : "rgb(230, 231, 228)",
+                };
+              }}
               key={index}
             >
               <i.icon className="ms-3 icon" />
               <span className="d-none d-md-inline">{i.text}</span>
-            </Link>
+            </NavLink>
           );
         })}
       </ul>

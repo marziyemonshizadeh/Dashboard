@@ -10,7 +10,7 @@ import {
 export default function chart({ title, data, dataKey1, dataKey2, grid }) {
   return (
     <div className="my-3 p-2 card">
-      <h3 className="mb-3 text-muted">{title}</h3>
+      <h3 className="mb-3">{title}</h3>
       {/* responsive chart aspect=height chart */}
       <ResponsiveContainer width="100%" aspect={4}>
         {/* chart data */}

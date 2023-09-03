@@ -57,7 +57,7 @@ export default function areaChart({ title }) {
 
   return (
     <div className="my-3 p-2 card">
-      <h3 className="mb-3 text-muted">{title}</h3>
+      <h3 className="mb-3">{title}</h3>
       <ResponsiveContainer width="100%" aspect={3}>
         <AreaChart data={data}>
           <defs>

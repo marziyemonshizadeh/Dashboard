@@ -11,12 +11,12 @@ export default function header() {
     <div className="d-flex justify-content-end">
       <div className="mt-3 d-flex gap-1">
         <Badge color="secondary" badgeContent={7} showZero>
-          <NotificationsIcon color="action" />
+          <NotificationsIcon color="grey[400]" />
         </Badge>
         <Badge color="secondary" badgeContent={3} showZero>
-          <LanguageIcon color="action" />
+          <LanguageIcon color="grey[400]" />
         </Badge>
-        <SettingsIcon color="action" />
+        <SettingsIcon color="grey[400]" />
       </div>
       <RoundedImg
         src="https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/short/linkedin-profile-picture-maker/dummy_image/thumb/004.webp"

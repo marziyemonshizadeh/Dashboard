@@ -9,7 +9,7 @@ import { xAxisData } from "../../datas";
 
 export default function home() {
   return (
-    <div className="mx-2">
+    <div className="mx-2" style={{ height: "150vh" }}>
       {/* features */}
       <div class="container text-center">
         <div class="row gap-md-0 gap-2">

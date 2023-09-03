@@ -14,7 +14,7 @@ export default function WidgetSm() {
           <RoundedImg src={i.img} alt={i.alt} />
           <div className="d-flex flex-column gap-2">
             <p className="fs-5">{i.username}</p>
-            <p className="text-muted">{i.title}</p>
+            <p style={{ color: "#5550bd" }}>{i.title}</p>
           </div>
           <VisibilityRoundedIcon />
         </div>

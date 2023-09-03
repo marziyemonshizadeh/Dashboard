@@ -16,26 +16,26 @@ export default function product() {
         </div>
         <div className="col col-md-6">
           <div className="my-3 p-2 card">
-            <h3 className="mb-3 text-muted">msi</h3>
+            <h3 className="mb-3 ">msi</h3>
             <div className="d-flex justify-content-between p-1">
-              <div>ID</div>
-              <div className="text-muted">2</div>
+              <div>آی دی</div>
+              <div>2</div>
             </div>
             <div className="d-flex justify-content-between p-1">
-              <div>NAME</div>
-              <div className="text-muted">Dell</div>
+              <div>نام</div>
+              <div>Dell</div>
             </div>
             <div className="d-flex justify-content-between p-1">
-              <div>Sales</div>
-              <div className="text-muted">$90000</div>
+              <div>قیمت</div>
+              <div>$90000</div>
             </div>
             <div className="d-flex justify-content-between p-1">
-              <div>Active</div>
-              <div className="text-muted">Yes</div>
+              <div>وضعیت</div>
+              <div>Yes</div>
             </div>
             <div className="d-flex justify-content-between p-1">
-              <div>In Stock</div>
-              <div className="text-muted">No</div>
+              <div>موجودیت</div>
+              <div>No</div>
             </div>
           </div>
         </div>
@@ -49,7 +49,7 @@ export default function product() {
             className="img-fluid"
           />
           <div className="d-flex flex-column justify-content-start gap-2 m-5">
-            <h2 className="text-muted">نام محصول </h2>
+            <h2>نام محصول </h2>
             <input
               type="text"
               class="form-control"
@@ -59,21 +59,20 @@ export default function product() {
               required=""
             />
             <label for="country" class="form-label">
-              in stock
+              موجودیت
             </label>
             <select class="form-select" id="country" required="">
               <option value="">yes</option>
               <option>no</option>
             </select>
-            <div class="invalid-feedback">يرجى اختيار بلد صحيح.</div>
+
             <label for="country" class="form-label">
-              active
+              وضعیت
             </label>
             <select class="form-select" id="country" required="">
               <option value="">yes</option>
               <option>no</option>
             </select>
-            <div class="invalid-feedback">يرجى اختيار بلد صحيح.</div>
           </div>
         </div>
       </div>

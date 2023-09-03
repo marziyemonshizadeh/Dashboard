@@ -20,7 +20,7 @@ let dashboard = [
 ];
 let quickMenu = [
   { text: "کاربران", to: "/users", icon: PersonIcon },
-  { text: "کاربر جدید", to: "/", icon: PersonAddIcon },
+  { text: "کاربر جدید", to: "/newuser", icon: PersonAddIcon },
   { text: "محصولات", to: "/products", icon: StoreIcon },
   { text: "معاملات", to: "/", icon: AttachMoneyIcon },
   { text: "گزارش ها", to: "/", icon: BarChartIcon },

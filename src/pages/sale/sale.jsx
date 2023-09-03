@@ -6,7 +6,7 @@ import { AnnualSalesOfEachProduct } from "../../datas";
 
 export default function sale() {
   return (
-    <>
+    <div style={{ height: "1024px" }}>
       <div class="row">
         <div class="col-12 col-md-6">
           <FunnelChart
@@ -21,6 +21,6 @@ export default function sale() {
         </div>
       </div>
       <AreaChart title="فروش سالانه هر محصول" />
-    </>
+    </div>
   );
 }

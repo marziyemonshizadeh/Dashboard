@@ -14,5 +14,6 @@ let routes = [
   { path: "/analytics", element: <Analytics /> },
   { path: "/product/:productID", element: <Product /> },
   { path: "/sale", element: <Sale /> },
+  { path: "/newuser", element: <NewUser /> },
 ];
 export default routes;

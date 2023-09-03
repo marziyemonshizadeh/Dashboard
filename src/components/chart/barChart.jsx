@@ -11,7 +11,7 @@ import {
 export default function barChart({ title, data, dataKey, XAxisDataKey, fill }) {
   return (
     <div className="my-3 p-2 card">
-      <h3 className="mb-3 text-muted">{title}</h3>
+      <h3 className="mb-3">{title}</h3>
       <ResponsiveContainer width="100%" height="100%" aspect={2}>
         <BarChart
           width={150}
