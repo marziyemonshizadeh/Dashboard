@@ -11,8 +11,8 @@ export default function home() {
   return (
     <div className="mx-2" style={{ height: "150vh" }}>
       {/* features */}
-      <div class="container text-center">
-        <div class="row gap-md-0 gap-2">
+      <div class="text-center">
+        <div class="row gap-md-0 gap-3">
           <div class="col-12 col-md-4">
             <Features title="هزینه" price="2,415" action="2.4+">
               <ArrowUpwardRoundedIcon className="text-success mb-1 mx-1" />

@@ -6,7 +6,7 @@ export default function WidgetLg() {
     <div className="card p-md-3 my-2" style={{ minHeight: "330px" }}>
       <div class="card-body">
         <p>آخرین معاملات</p>
-        <table class="card-text table table-borderless">
+        <table class="table table-dark my-4">
           <thead>
             <tr>
               <th scope="col">نام مشتری</th>

@@ -8,7 +8,7 @@ import "./topbar.css";
 
 export default function header() {
   return (
-    <div className="d-flex justify-content-end">
+    <div className="d-flex justify-content-end ms-2 my-1">
       <div className="mt-3 d-flex gap-1">
         <Badge color="secondary" badgeContent={7} showZero>
           <NotificationsIcon color="grey[400]" />
