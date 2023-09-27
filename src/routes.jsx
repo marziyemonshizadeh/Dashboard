@@ -1,4 +1,5 @@
 import Analytics from "./pages/analytics/analytics";
+import Clock from "./pages/clock/clock";
 import Home from "./pages/home/home";
 import NewUser from "./pages/newUser/newUser";
 import Product from "./pages/product/product";
@@ -15,5 +16,6 @@ let routes = [
   { path: "/product/:productID", element: <Product /> },
   { path: "/sale", element: <Sale /> },
   { path: "/newuser", element: <NewUser /> },
+  { path: "/clock", element: <Clock /> },
 ];
 export default routes;
