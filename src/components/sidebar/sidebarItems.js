@@ -1,4 +1,5 @@
 // icons-material
+import AccessAlarmIcon from "@mui/icons-material/AccessAlarm";
 import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
 import BarChartIcon from "@mui/icons-material/BarChart";
 import BusinessCenterRoundedIcon from "@mui/icons-material/BusinessCenterRounded";
@@ -22,7 +23,7 @@ let quickMenu = [
   { text: "کاربران", to: "/users", icon: PersonIcon },
   { text: "کاربر جدید", to: "/newuser", icon: PersonAddIcon },
   { text: "محصولات", to: "/products", icon: StoreIcon },
-  { text: "ساعت", to: "/clock", icon: StoreIcon },
+  { text: "ساعت", to: "/clock", icon: AccessAlarmIcon },
   { text: "معاملات", to: "/", icon: AttachMoneyIcon },
   { text: "گزارش ها", to: "/", icon: BarChartIcon },
 ];

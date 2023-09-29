@@ -15,10 +15,10 @@ export default function click() {
     }, 1000);
   };
   return (
-    <div className="d-flex justify-content-center ">
+    <div className="d-flex justify-content-center " style={{ height: "100vh" }}>
       <div
-        className="card text-center text-light p-md-4"
-        style={{ maxWidth: "300px", height: "100vh" }}
+        className="card text-center text-light p-4"
+        style={{ maxWidth: "500px", maxHeight: "120px", marginTop: "100px" }}
       >
         {new Date().toDateString()}
         <br />
